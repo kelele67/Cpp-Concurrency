@@ -23,7 +23,6 @@ struct accumulate_block {
 template<typename Iterator, typename T>
 T parallel_accumulate(Iterator first, Iterator last, T init) {
     unsigned long const length = std::distance(first, last);
-    
     // 如果输入为空
     if (!length) {
         return init;
