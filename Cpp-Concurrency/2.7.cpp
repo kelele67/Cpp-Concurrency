@@ -1,10 +1,10 @@
 //
-//  2.7.cpp
+//  2.7.cpp 转移线程所有权
 //  Cpp-Concurrency
 //
 //  Created by 刘启 on 2017/7/17.
 //  Copyright © 2017年 kelele67. All rights reserved.
-//
+//  量产线程，等待它们结束
 
 #include <vector>
 #include <thread>
