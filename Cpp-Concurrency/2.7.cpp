@@ -12,7 +12,6 @@
 #include <functional>
 
 void do_work(unsigned id) {
-    
 }
 
 void f() {
