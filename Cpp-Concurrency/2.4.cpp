@@ -37,7 +37,7 @@ std::string get_filename_from_user() {
 }
 
 void process_user_input(user_command const& cmd) {
-    
+
 }
 
 void edit_document(std::string const& filename) {
