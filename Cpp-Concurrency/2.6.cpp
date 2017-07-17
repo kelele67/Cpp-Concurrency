@@ -41,7 +41,6 @@ struct func {
 };
 
 void do_something_in_current_thread() {
-    
 }
 
 void f() {
