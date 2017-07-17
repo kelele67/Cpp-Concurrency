@@ -9,7 +9,7 @@
 #include <thread>
 
 void some_function() {
-    
+
 }
 
 void some_other_function(int) {
