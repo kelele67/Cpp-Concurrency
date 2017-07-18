@@ -37,13 +37,13 @@ void high_level_stuff(int some_param) {
 }
 
 void high_level_func() {
-    std::lock_guard<hierarchical_mutex> lk(high_level_mutex);
-    high_level_stuff(low_level_func());
+    std::lock_guard<hierarchical_mutex> lk(high_level_mutex); // 让 high_level_mutex 上锁，层次为10000
+    high_level_stuff(low_level_func()); // 给低层次5000的上锁
 }
 
 void thread_a() {
     high_level_func();
-}
+}   // 遵守规则，运行成功
 
 hierarchical_mutex other_mutex(100);
 void do_other_stuff() {
@@ -56,9 +56,9 @@ void other_stuff() {
 }
 
 void thread_b() {
-    std::lock_guard<hierarchical_mutex> lk(other_mutex);
-    other_stuff();
-}
+    std::lock_guard<hierarchical_mutex> lk(other_mutex); // 锁住了ohter_mutex，层级只有100
+    other_stuff(); // 想要调用10000层级的，违反层级结构
+}   // 无视规则，运行失败
 
 int main() {
     
