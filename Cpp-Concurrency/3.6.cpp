@@ -29,7 +29,7 @@ public:
         }
         
         std::lock(lhs.m, rhs.m);    // 锁住两个互斥量 虽然可以避免死锁，但是没发帮助你获取其中一个锁
-        std::lock_guard<std::mutex> lock_a(lhs.m, std::adopt_lock);
+        std::lock_guard<std::mutex> lock_a(lhs.m, std::adopt_lock); // std::adopt_lcok表示除了 std::lock_guard的对象上锁以外，还表示现成的锁，而非尝试创建新的锁
         std::lock_guard<std::mutex> lock_b(rhs.m, std::adopt_lock);
         swap(lhs.some_detail, rhs.some_detail);
     }
