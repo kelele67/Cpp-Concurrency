@@ -4,7 +4,7 @@
 //
 //  Created by 刘启 on 2017/7/18.
 //  Copyright © 2017年 kelele67. All rights reserved.
-//  交换操作中使用 std::lock() 和 std::lock_guard()
+//  交换操作中使用 std::lock() 和 std::lock_guard
 
 #include <mutex>
 
