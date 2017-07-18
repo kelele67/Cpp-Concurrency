@@ -21,7 +21,7 @@ void write_x_then_y() {
 
 void read_y_then_x() {
     while (!y.load(std::memory_order_relaxed));
-    if (x.load(std::memory_order_relaxed))
+    if (x.load(std::memory_order_relaxed)) // 可能读到false
         ++z;
 }
 
@@ -33,5 +33,5 @@ int main() {
     std::thread b(read_y_then_x);
     a.join();
     b.join();
-    assert(z.load() != 0);
+    assert(z.load() != 0); // 可能会触发
 }
