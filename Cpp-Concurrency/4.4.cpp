@@ -4,7 +4,7 @@
 //
 //  Created by 刘启 on 2017/7/18.
 //  Copyright © 2017年 kelele67. All rights reserved.
-//  实现队列的 push() 和 wait_and_pop()
+//  从4.1提取出 push() 和 wait_and_pop()
 
 #include <mutex>
 #include <condition_variable>
