@@ -45,4 +45,4 @@ auto f8 = std::async(std::launch::deferred, baz, std::ref(x)); // 在wait() 或 
 auto f9 = std::async(std::launch::deferred | std::launch::async, baz, std::ref(x)); // 实现选择执行方式
 
 auto f10 = std::async(baz, std::ref(x));
-f8.wait(); // 调用延迟函数
+// f8.wait(); // 调用延迟函数
