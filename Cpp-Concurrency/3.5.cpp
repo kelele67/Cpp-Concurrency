@@ -51,7 +51,7 @@ public:
         std::lock_guard<std::mutex> lock(m);
         if (data.empty())
             throw empty_stack();
-        value = data.top();
+        value = std::move(data.top());
         data.pop();
     }
     
