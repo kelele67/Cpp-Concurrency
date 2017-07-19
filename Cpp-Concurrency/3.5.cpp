@@ -41,7 +41,7 @@ public:
         if (data.empty())
             throw empty_stack();
         // 在修改堆栈前，分配出返回值
-        std::shared_ptr<T> const res(std::make_shared<T>(data.top()));
+        std::shared_ptr<T> const res(std::make_shared<T>(std::move(data.top())));
         data.pop();
         return res;
                                      
