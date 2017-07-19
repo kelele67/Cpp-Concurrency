@@ -32,7 +32,7 @@ public:
     
     void push(T new_value) {
         std::lock_guard<std::mutex> lock(m);
-        data.push(std::move(new_value));
+        data.push(new_value);
     }
     
     std::shared_ptr<T> pop() {
@@ -41,7 +41,7 @@ public:
         if (data.empty())
             throw empty_stack();
         // 在修改堆栈前，分配出返回值
-        std::shared_ptr<T> const res(std::make_shared<T>(std::move(data.top())));
+        std::shared_ptr<T> const res(std::make_shared<T>(data.top()));
         data.pop();
         return res;
                                      
@@ -51,7 +51,7 @@ public:
         std::lock_guard<std::mutex> lock(m);
         if (data.empty())
             throw empty_stack();
-        value = std::move(data.top());
+        value = data.top();
         data.pop();
     }
     
