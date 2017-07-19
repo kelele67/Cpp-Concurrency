@@ -32,7 +32,7 @@ public:
     
     void push(T new_value) {
         std::lock_guard<std::mutex> lock(m);
-        data.push(new_value);
+        data.push(std::move(new_value));
     }
     
     std::shared_ptr<T> pop() {
