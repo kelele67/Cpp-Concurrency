@@ -32,7 +32,7 @@ std::shared_ptr<T> pop() {
         else {
             delete old_head;
         }
-        delete_nodes_with_no_hazerds(); // 链表上没有任何风险指针引用节点时，安全删除
+        delete_nodes_with_no_hazards(); // 链表上没有任何风险指针引用节点时，安全删除
     }
     return res;
 }
