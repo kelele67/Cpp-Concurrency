@@ -47,12 +47,12 @@ private:
     }
     
     void chain_pending_node(node* first, node* last) {
-        last->next = to_be_deleted; // 把最后一个节点替换成当前to_be_deleted指针
+        last->next = to_be_deleted; //
         // 用循环来保证last->next的正确性
-        while (!to_be_deleted.compare_exchange_weak(last->next, first)); // 将链表中第一个节点作为新的to_be_deleted指针进行存储
+        while (!to_be_deleted.compare_exchange_weak(last->next, first));
     }
     
     void chain_pending_node(node* n) {
-        chain_pending_node(n, n); // 添加单个节点时，作为第一个节点，同时也是最后一个节点
+        chain_pending_node(n, n); //
     }
 };
