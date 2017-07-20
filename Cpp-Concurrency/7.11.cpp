@@ -48,7 +48,7 @@ public:
     }
     void push(T new_value) {
         std::shared_ptr<T> new_data(std::make_shared<T>(new_value));
-        node* p = new node; // 分配节点作为虚拟节点
+        node* p = new node; // 分配节点作为虚拟节点 -> 会发生竞争
         node* const old_tail = tail.load(); // 读取tail
         old_tail->data.swap(new_value);
         old_tail->next = p;
