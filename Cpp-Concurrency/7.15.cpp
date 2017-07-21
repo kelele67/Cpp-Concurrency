@@ -37,6 +37,21 @@ public:
             T* old_data = nullptr;
             if (old_tail.ptr->data.compare_exchange_strong(old_data, new_data.get())) {
                 counted_node_ptr old_next = {0};
+                if (old_tail.ptr->next.compare_exchange_strong(old_next, new_next)) {
+                    delete new_next.ptr;
+                    new_next = old_next;
+                }
+                set_new_tail(old_tail, new_next);
+                new_data.release();
+                break;
+            }
+            else {
+                counted_node_ptr old_next = {0};
+                if (old_tail.ptr->next.compare_exchange_strong(old_next, new_next)) {
+                    old_next = new_next;
+                    new_next.ptr = new node;
+                }
+                set_new_tail(old_tail, old_next);
             }
         }
     }
