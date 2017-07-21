@@ -51,7 +51,7 @@ public:
                     old_next = new_next;
                     new_next.ptr = new node;
                 }
-                set_new_tail(old_tail, old_next);
+                set_new_tail(old_tail, old_next); // 
             }
         }
     }
