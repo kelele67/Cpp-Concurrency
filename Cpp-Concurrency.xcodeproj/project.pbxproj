@@ -20,6 +20,7 @@
 		3A22C0B51F20BCFF00AE19A7 /* 7.11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A22C0B31F20BCFF00AE19A7 /* 7.11.cpp */; };
 		3A22C0B71F20EA5000AE19A7 /* 7.12.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A22C0B61F20EA5000AE19A7 /* 7.12.cpp */; };
 		3A313E6D1F22568A009B5E8E /* 7.14.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A313E6C1F22568A009B5E8E /* 7.14.cpp */; };
+		3A313E6F1F225840009B5E8E /* 7.15.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A313E6E1F225840009B5E8E /* 7.15.cpp */; };
 		3A37CE491F1EE0FF00A63A36 /* 5.7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A37CE481F1EE0FF00A63A36 /* 5.7.cpp */; };
 		3A37CE4B1F1EE2EA00A63A36 /* 5.8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A37CE4A1F1EE2EA00A63A36 /* 5.8.cpp */; };
 		3A37CE4D1F1EE49B00A63A36 /* 5.9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A37CE4C1F1EE49B00A63A36 /* 5.9.cpp */; };
@@ -108,6 +109,7 @@
 		3A22C0B31F20BCFF00AE19A7 /* 7.11.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7.11.cpp; sourceTree = "<group>"; };
 		3A22C0B61F20EA5000AE19A7 /* 7.12.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7.12.cpp; sourceTree = "<group>"; };
 		3A313E6C1F22568A009B5E8E /* 7.14.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7.14.cpp; sourceTree = "<group>"; };
+		3A313E6E1F225840009B5E8E /* 7.15.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7.15.cpp; sourceTree = "<group>"; };
 		3A37CE481F1EE0FF00A63A36 /* 5.7.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 5.7.cpp; sourceTree = "<group>"; };
 		3A37CE4A1F1EE2EA00A63A36 /* 5.8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 5.8.cpp; sourceTree = "<group>"; };
 		3A37CE4C1F1EE49B00A63A36 /* 5.9.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 5.9.cpp; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 				3A22C0B61F20EA5000AE19A7 /* 7.12.cpp */,
 				3A1584741F21CBE5003FFD36 /* 7.13.cpp */,
 				3A313E6C1F22568A009B5E8E /* 7.14.cpp */,
+				3A313E6E1F225840009B5E8E /* 7.15.cpp */,
 			);
 			path = "Cpp-Concurrency";
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				3A7BE0061F1DDF7700877CF6 /* 4.10.cpp in Sources */,
 				3A7BDFE61F1D8FE300877CF6 /* 3.5.cpp in Sources */,
 				3A7BE00E1F1DFEDF00877CF6 /* 4.14.cpp in Sources */,
+				3A313E6F1F225840009B5E8E /* 7.15.cpp in Sources */,
 				3A22C0A21F20427600AE19A7 /* 7.2.cpp in Sources */,
 				3AD91A081F1D044400857697 /* 2.6.cpp in Sources */,
 				3A22C0AA1F20655C00AE19A7 /* 7.6.cpp in Sources */,
