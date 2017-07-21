@@ -4,7 +4,7 @@
 //
 //  Created by 刘启 on 2017/7/21.
 //  Copyright © 2017年 kelele67. All rights reserved.
-//
+//  无锁队列中的线程互助
 //  修改pop()用来帮助push()完成工作
 
 #include <atomic>
