@@ -16,7 +16,7 @@ private:
     struct node {
         std::atomic<T*> data;
         std::atomic<node_counter> count;
-        std::atomic<counted_node_ptr> next;
+        std::atomic<counted_node_ptr> next; //next指针就是原子的
     };
 public:
     std::unique_ptr<T> pop() {
@@ -27,7 +27,7 @@ public:
             if (ptr == tail.load().ptr) {
                 return std::unique_ptr<T>();
             }
-            counted_node_ptr next = ptr->next.load();
+            counted_node_ptr next = ptr->next.load(); //
             if (head.compare_exchange_strong(nullptr)) {
                 free_external_counter(old_head);
                 return std::unique_ptr<T>(res);
