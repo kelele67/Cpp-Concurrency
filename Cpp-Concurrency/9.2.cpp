@@ -43,16 +43,29 @@ public:
 
 class thread_pool {
 public:
-    std::queue<function_wrapper> work_queue;
+    std::queue<function_wrapper> work_queue; // 使用function_wrapper，而非使用std::function
+    
+    void worker_thread() {
+        while(!done) {
+            function wrapper task;
+            if (work_queue.try_pop(task)) {
+                task();
+            }
+            else {
+                std::this_thread::yield();
+            }
+        }
+    }
+public:
     
     template<typename FunctionType>
-    std::future<typename std::result_of<FunctionType()>::type>
+    std::future<typename std::result_of<FunctionType()>::type> // 返回一个 std::future<>保存任务的返回值，并允许调用者等待任务完全结束
     submit(FunctionType f) {
-        typedef typename std::result_of<FunctionType()>::type result_type;
+        typedef typename std::result_of<FunctionType()>::type result_type; // 对 result_type 使用 std::result_of
         
-        std::packaged_task<result_type()> task(std::move(f));
-        std::future<result_type> res(task.get_future());
-        work_queue.push_back(std::move(task));
-        return res;
+        std::packaged_task<result_type()> task(std::move(f)); // 将f包装入std::packaged_task<result_type()>
+        std::future<result_type> res(task.get_future()); // 从 std::packaged_task<>中获取future
+        work_queue.push_back(std::move(task)); // 向任务队列推送任务
+        return res; // 返回future
     }
 };
