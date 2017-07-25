@@ -43,6 +43,7 @@
 		3A37CE6B1F1FA1B200A63A36 /* 7.1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A37CE6A1F1FA1B200A63A36 /* 7.1.cpp */; };
 		3A5179E21F26DFC80081BFC8 /* messaging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5179E11F26DFC80081BFC8 /* messaging.cpp */; };
 		3A5179E41F26E2C40081BFC8 /* sender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5179E31F26E2C40081BFC8 /* sender.cpp */; };
+		3A5179E61F26E31A0081BFC8 /* receiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5179E51F26E31A0081BFC8 /* receiver.cpp */; };
 		3A7BDFDE1F1D770900877CF6 /* 3.1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7BDFDD1F1D770900877CF6 /* 3.1.cpp */; };
 		3A7BDFE01F1D7A8F00877CF6 /* 3.2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7BDFDF1F1D7A8F00877CF6 /* 3.2.cpp */; };
 		3A7BDFE21F1D7E8400877CF6 /* 3.3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7BDFE11F1D7E8400877CF6 /* 3.3.cpp */; };
@@ -137,6 +138,7 @@
 		3A37CE6A1F1FA1B200A63A36 /* 7.1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7.1.cpp; sourceTree = "<group>"; };
 		3A5179E11F26DFC80081BFC8 /* messaging.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = messaging.cpp; sourceTree = "<group>"; };
 		3A5179E31F26E2C40081BFC8 /* sender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sender.cpp; sourceTree = "<group>"; };
+		3A5179E51F26E31A0081BFC8 /* receiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = receiver.cpp; sourceTree = "<group>"; };
 		3A7BDFDD1F1D770900877CF6 /* 3.1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 3.1.cpp; sourceTree = "<group>"; };
 		3A7BDFDF1F1D7A8F00877CF6 /* 3.2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 3.2.cpp; sourceTree = "<group>"; };
 		3A7BDFE11F1D7E8400877CF6 /* 3.3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 3.3.cpp; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 				3AF641011F26275200866A3F /* 9.3.cpp */,
 				3A5179E11F26DFC80081BFC8 /* messaging.cpp */,
 				3A5179E31F26E2C40081BFC8 /* sender.cpp */,
+				3A5179E51F26E31A0081BFC8 /* receiver.cpp */,
 			);
 			path = "Cpp-Concurrency";
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				3A7BDFE61F1D8FE300877CF6 /* 3.5.cpp in Sources */,
 				3A7BE00E1F1DFEDF00877CF6 /* 4.14.cpp in Sources */,
 				3A313E6F1F225840009B5E8E /* 7.15.cpp in Sources */,
+				3A5179E61F26E31A0081BFC8 /* receiver.cpp in Sources */,
 				3A22C0A21F20427600AE19A7 /* 7.2.cpp in Sources */,
 				3AD91A081F1D044400857697 /* 2.6.cpp in Sources */,
 				3A22C0AA1F20655C00AE19A7 /* 7.6.cpp in Sources */,
