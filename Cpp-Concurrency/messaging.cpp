@@ -12,25 +12,28 @@
 #include <memory>
 
 namespace messaging {
+    // 队列的基础类
     struct message_base {
         virtual ~message_base() {}
     };
     
     template <typename Msg>
+    // 每个消息类型都需要特化
     struct wrapped_message: message_base {
         Msg contents;
         explicit wrapped_message(Msg const& contents_) : contents(contents_) {}
     };
     
+    // 我们的队列
     class queue {
         std::mutex mut;
         std::condition_variable cond;
-        std::queue<std::shared_ptr<message_base> > msgq;
+        std::queue<std::shared_ptr<message_base> > msgq; // 实际存储指向 message_base类指针的队列
     public:
         template <typename T>
         void push(T const& msg) {
             std::lock_guard<std::mutex> lk(mut);
-            msgq.push(std::make_shared<wrapped_message<T> >(msg));
+            msgq.push(std::make_shared<wrapped_message<T> >(msg)); // 包装已传递的信息，存储指针
             cond.notify_all();
         }
         std::shared_ptr<message_base> wait_and_pop() {
