@@ -4,7 +4,7 @@
 //
 //  Created by 刘启 on 2017/7/25.
 //  Copyright © 2017年 kelele67. All rights reserved.
-//  简单的消息队列
+//  简单的消息队列框架
 
 #include <mutex>
 #include <condition_variable>
