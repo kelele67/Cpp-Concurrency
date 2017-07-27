@@ -1,5 +1,5 @@
 //
-//  templateDispatcher.cpp
+//  templateDispatcher.cpp 消息传递框架与完整的ATM机示例
 //  Cpp-Concurrency
 //
 //  Created by 刘启 on 2017/7/25.
