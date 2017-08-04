@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0F4AEC1F2ADC950061A32E /* interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F4AEB1F2ADC950061A32E /* interface.cpp */; };
+		3A0F4AEE1F2AE13E0061A32E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F4AED1F2AE13E0061A32E /* main.cpp */; };
 		3A1584751F21CBE5003FFD36 /* 7.13.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A1584741F21CBE5003FFD36 /* 7.13.cpp */; };
 		3A22C0A21F20427600AE19A7 /* 7.2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A22C0A11F20427600AE19A7 /* 7.2.cpp */; };
 		3A22C0A41F20494200AE19A7 /* 7.3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A22C0A31F20494200AE19A7 /* 7.3.cpp */; };
@@ -44,6 +46,8 @@
 		3A5179E21F26DFC80081BFC8 /* messaging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5179E11F26DFC80081BFC8 /* messaging.cpp */; };
 		3A5179E41F26E2C40081BFC8 /* sender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5179E31F26E2C40081BFC8 /* sender.cpp */; };
 		3A5179E61F26E31A0081BFC8 /* receiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5179E51F26E31A0081BFC8 /* receiver.cpp */; };
+		3A5179E81F26E68F0081BFC8 /* dispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5179E71F26E68F0081BFC8 /* dispatcher.cpp */; };
+		3A5179EA1F26F6010081BFC8 /* templateDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5179E91F26F6010081BFC8 /* templateDispatcher.cpp */; };
 		3A7BDFDE1F1D770900877CF6 /* 3.1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7BDFDD1F1D770900877CF6 /* 3.1.cpp */; };
 		3A7BDFE01F1D7A8F00877CF6 /* 3.2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7BDFDF1F1D7A8F00877CF6 /* 3.2.cpp */; };
 		3A7BDFE21F1D7E8400877CF6 /* 3.3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7BDFE11F1D7E8400877CF6 /* 3.3.cpp */; };
@@ -77,6 +81,9 @@
 		3A7BE01A1F1E151100877CF6 /* 5.4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7BE0191F1E151100877CF6 /* 5.4.cpp */; };
 		3A7BE01C1F1E3D0900877CF6 /* 5.5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7BE01B1F1E3D0900877CF6 /* 5.5.cpp */; };
 		3A7BE01E1F1E4B6500877CF6 /* 5.6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7BE01D1F1E4B6500877CF6 /* 5.6.cpp */; };
+		3A98FD641F29BFD700009913 /* withdraw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A98FD631F29BFD700009913 /* withdraw.cpp */; };
+		3A98FD661F29C39A00009913 /* atm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A98FD651F29C39A00009913 /* atm.cpp */; };
+		3A98FD681F29DC7000009913 /* bank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A98FD671F29DC7000009913 /* bank.cpp */; };
 		3AD919FC1F1D019100857697 /* 1.1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AD919FB1F1D019100857697 /* 1.1.cpp */; };
 		3AD919FE1F1D019C00857697 /* 2.1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AD919FD1F1D019C00857697 /* 2.1.cpp */; };
 		3AD91A001F1D01A800857697 /* 2.2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AD919FF1F1D01A800857697 /* 2.2.cpp */; };
@@ -102,6 +109,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3A0F4AEB1F2ADC950061A32E /* interface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = interface.cpp; sourceTree = "<group>"; };
+		3A0F4AED1F2AE13E0061A32E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3A1584741F21CBE5003FFD36 /* 7.13.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7.13.cpp; sourceTree = "<group>"; };
 		3A22C0A11F20427600AE19A7 /* 7.2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7.2.cpp; sourceTree = "<group>"; };
 		3A22C0A31F20494200AE19A7 /* 7.3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7.3.cpp; sourceTree = "<group>"; };
@@ -139,6 +148,8 @@
 		3A5179E11F26DFC80081BFC8 /* messaging.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = messaging.cpp; sourceTree = "<group>"; };
 		3A5179E31F26E2C40081BFC8 /* sender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sender.cpp; sourceTree = "<group>"; };
 		3A5179E51F26E31A0081BFC8 /* receiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = receiver.cpp; sourceTree = "<group>"; };
+		3A5179E71F26E68F0081BFC8 /* dispatcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dispatcher.cpp; sourceTree = "<group>"; };
+		3A5179E91F26F6010081BFC8 /* templateDispatcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = templateDispatcher.cpp; sourceTree = "<group>"; };
 		3A7BDFDD1F1D770900877CF6 /* 3.1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 3.1.cpp; sourceTree = "<group>"; };
 		3A7BDFDF1F1D7A8F00877CF6 /* 3.2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 3.2.cpp; sourceTree = "<group>"; };
 		3A7BDFE11F1D7E8400877CF6 /* 3.3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 3.3.cpp; sourceTree = "<group>"; };
@@ -172,6 +183,9 @@
 		3A7BE0191F1E151100877CF6 /* 5.4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 5.4.cpp; sourceTree = "<group>"; };
 		3A7BE01B1F1E3D0900877CF6 /* 5.5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 5.5.cpp; sourceTree = "<group>"; };
 		3A7BE01D1F1E4B6500877CF6 /* 5.6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 5.6.cpp; sourceTree = "<group>"; };
+		3A98FD631F29BFD700009913 /* withdraw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = withdraw.cpp; sourceTree = "<group>"; };
+		3A98FD651F29C39A00009913 /* atm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = atm.cpp; sourceTree = "<group>"; };
+		3A98FD671F29DC7000009913 /* bank.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bank.cpp; sourceTree = "<group>"; };
 		3AD919F11F1D018000857697 /* Cpp-Concurrency */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Cpp-Concurrency"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD919FB1F1D019100857697 /* 1.1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 1.1.cpp; sourceTree = "<group>"; };
 		3AD919FD1F1D019C00857697 /* 2.1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 2.1.cpp; sourceTree = "<group>"; };
@@ -295,6 +309,13 @@
 				3A5179E11F26DFC80081BFC8 /* messaging.cpp */,
 				3A5179E31F26E2C40081BFC8 /* sender.cpp */,
 				3A5179E51F26E31A0081BFC8 /* receiver.cpp */,
+				3A5179E71F26E68F0081BFC8 /* dispatcher.cpp */,
+				3A5179E91F26F6010081BFC8 /* templateDispatcher.cpp */,
+				3A98FD631F29BFD700009913 /* withdraw.cpp */,
+				3A98FD651F29C39A00009913 /* atm.cpp */,
+				3A98FD671F29DC7000009913 /* bank.cpp */,
+				3A0F4AEB1F2ADC950061A32E /* interface.cpp */,
+				3A0F4AED1F2AE13E0061A32E /* main.cpp */,
 			);
 			path = "Cpp-Concurrency";
 			sourceTree = "<group>";
@@ -379,6 +400,7 @@
 				3A1584751F21CBE5003FFD36 /* 7.13.cpp in Sources */,
 				3A7BDFFA1F1DB1C100877CF6 /* 4.4.cpp in Sources */,
 				3A37CE571F1EF81200A63A36 /* 6.1.cpp in Sources */,
+				3A98FD681F29DC7000009913 /* bank.cpp in Sources */,
 				3A7BE0101F1E028600877CF6 /* 4.15.cpp in Sources */,
 				3AF641021F26275200866A3F /* 9.3.cpp in Sources */,
 				3A22C0B71F20EA5000AE19A7 /* 7.12.cpp in Sources */,
@@ -400,12 +422,15 @@
 				3A7BE0121F1E06C200877CF6 /* 4.16.cpp in Sources */,
 				3A37CE4F1F1EEA7400A63A36 /* 5.10.cpp in Sources */,
 				3A7BDFE01F1D7A8F00877CF6 /* 3.2.cpp in Sources */,
+				3A0F4AEC1F2ADC950061A32E /* interface.cpp in Sources */,
 				3AD919FC1F1D019100857697 /* 1.1.cpp in Sources */,
 				3A5179E21F26DFC80081BFC8 /* messaging.cpp in Sources */,
 				3A37CE671F1F67EC00A63A36 /* 6.9.cpp in Sources */,
 				3A7BDFF01F1DA07000877CF6 /* 3.10.cpp in Sources */,
 				3A22C0B21F208DC800AE19A7 /* 7.10.cpp in Sources */,
 				3A37CE551F1EF1F200A63A36 /* 5.13.cpp in Sources */,
+				3A5179E81F26E68F0081BFC8 /* dispatcher.cpp in Sources */,
+				3A0F4AEE1F2AE13E0061A32E /* main.cpp in Sources */,
 				3A22C0B51F20BCFF00AE19A7 /* 7.11.cpp in Sources */,
 				3AD91A001F1D01A800857697 /* 2.2.cpp in Sources */,
 				3A7BDFFE1F1DCCB900877CF6 /* 4.6.cpp in Sources */,
@@ -415,7 +440,9 @@
 				3A7BDFF21F1DA1DB00877CF6 /* 3.11.cpp in Sources */,
 				3AD91A0C1F1D0A6100857697 /* 2.8.cpp in Sources */,
 				3A7BE0081F1DE28600877CF6 /* 4.11.cpp in Sources */,
+				3A5179EA1F26F6010081BFC8 /* templateDispatcher.cpp in Sources */,
 				3A37CE611F1F274800A63A36 /* 6.6.cpp in Sources */,
+				3A98FD641F29BFD700009913 /* withdraw.cpp in Sources */,
 				3A313E731F22F9D9009B5E8E /* 9.2.cpp in Sources */,
 				3A37CE651F1F579700A63A36 /* 6.8.cpp in Sources */,
 				3A7BE0061F1DDF7700877CF6 /* 4.10.cpp in Sources */,
@@ -431,6 +458,7 @@
 				3A22C0A41F20494200AE19A7 /* 7.3.cpp in Sources */,
 				3A7BE00A1F1DF78500877CF6 /* 4.12.cpp in Sources */,
 				3A37CE6B1F1FA1B200A63A36 /* 7.1.cpp in Sources */,
+				3A98FD661F29C39A00009913 /* atm.cpp in Sources */,
 				3A7BDFE41F1D8CCE00877CF6 /* 3.4.cpp in Sources */,
 				3A7BE01A1F1E151100877CF6 /* 5.4.cpp in Sources */,
 				3A37CE5D1F1F0B5500A63A36 /* 6.4.cpp in Sources */,
